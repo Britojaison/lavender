@@ -2,10 +2,10 @@
 /*!
  * Project Name: GreenField Lavender Landing Page
  * Author: Tamil de Selva
- * Version: 1.8.9
+ * Version: 1.8.10
  * Description: Custom SCSS for layout, styling, and responsive design.
  * Created: 15 July 2025
- * Updated: 15 September 2025
+ * Updated: 16 MArch 2026
  */
 /* Plus Jakarta Sans */
 @font-face {
@@ -25,6 +25,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.chat-window{
+  z-index: 999999999999999999999999999999;
 }
 
 body,
@@ -1126,7 +1130,7 @@ main textarea {
 main .floating-download-btn {
   position: fixed;
   bottom: 35px;
-  right: 20px;
+  left: 20px;
   background: linear-gradient(180deg, #a57ac1, #7f4da0 100%);
   color: #ffffff;
   border: none;

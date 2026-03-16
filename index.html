@@ -1,6 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1458312591911963");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1458312591911963&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luxury Apartments & Villas in Coimbatore</title>
@@ -513,7 +549,7 @@
         </div>
       </div>
     </main>
-  </body>
+  
   <!-- Parallax Js -->
   <script>
     window.addEventListener("scroll", function () {
@@ -847,4 +883,65 @@
       }
     });
   </script>
+  <script>
+   const url = "https://aubackend.adventurus.in";
+    window.WIDGET_CONFIG = {
+      apiUrl: `${url}`,
+      aiUrl: "https://chatagent.adventurus.in",
+      apiKey: "fac796d6-8a35-4ab6-b554-81cdb752205e",
+      project_id: "210",
+      position: "bottom-right",
+      theme: "light",
+      language: "en",
+      autoOpen: true,
+      requireUserDetails: true,
+      branding: {
+        name: "GREENFIELD",
+        subtitle: "Your Personal Home Advisor",
+        logo: "https://lavender.greenfieldhousingindia.com/assets/images/faviocn.png",
+        buttonText: "Book a site visit",
+        headerBgColor: "#aaa5ffeb",
+        bodyBgColor: "linear-gradient(to right top, #b97ff0, #a573ea, #8f68e4, #775ddf, #5a53d9)",
+        buttonBgColor: "linear-gradient(to right, #caa0f7, #c093f4, #b586f2, #aa79ef, #9e6ced)",
+        headerColor: "#fff",
+        bodyColor: "#fff",
+        bodyDescriptionColor: "#e6e7e8"
+      },
+
+      welcomeMessage: {
+        title: "",
+        content: ""
+      },
+
+      userDetailsForm: {
+        title: "Ready To Own Your Next Address?",
+        subtitle: "Let's get to know you.",
+        description: "Your details are safe. Only relevant property updateds.",
+        fields: {
+          name: { label: "Full Name : ", placeholder: "So we know what to call you", required: true },
+          email: { label: "Email : ", placeholder: "For brochures and price sheet", required: true },
+          phone: { label: "Phone : ", placeholder: "For Priority access", required: true }
+        }
+      },
+
+      appointmentForm: {
+        title: "Book Your Site Visit",
+        subtitle: "Schedule your Site visit in seconds",
+        fields: {
+          date: { label: "Site visit Date", placeholder: "Enter your site visit date", required: true },
+          time: { label: "Site Visit Time", placeholder: "Enter your site visit time", required: true },
+          pickup_required: { label: "Pickup Need", placeholder: "", required: false },
+          pickup_address: { label: "Pickup Address", placeholder: "Enter your pickup address", required: false }
+        }
+      }
+    };
+    const script = document.createElement('script');
+    script.src = `${url}/public/chat-embed.js`;
+    script.onload = () => console.log("✅ Chat widget script loaded successfully");
+    script.onerror = () => console.error("❌ Failed to load chat widget script");
+    document.body.appendChild(script);
+  </script>
+
+  </body>
+
 </html>
