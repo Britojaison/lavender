@@ -48,7 +48,7 @@ h6 {
 p,
 li,
 a,
-button {
+button,small {
   font-family: "plus jakarta sans", sans-serif;
 }
 
@@ -1166,3 +1166,20 @@ main .floating-download-btn:hover {
     box-shadow: 0 0 10px rgba(127, 77, 160, 0.4), 0 0 20px rgba(127, 77, 160, 0.8);
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+
+
+
+.error {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-top: -5px;
+  margin-bottom: 8px;
+}
+
+input.error-border,
+textarea.error-border {
+  border: 1px solid red;
+}
