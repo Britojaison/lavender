@@ -2,22 +2,41 @@
 <html lang="en">
   <head>
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1458312591911963');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1458312591911963&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1458312591911963");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1458312591911963&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luxury Apartments & Villas in Coimbatore</title>
@@ -449,16 +468,20 @@ src="https://www.facebook.com/tr?id=1458312591911963&ev=PageView&noscript=1"
             <form id="enquiryForm">
               <div class="form-row">
                 <div class="form-group floating">
-                  <input type="text" name="name" required />
+                  <input type="text" name="name" />
+
                   <label>Your Name</label>
+                  <small class="error"></small>
                 </div>
                 <div class="form-group floating">
-                  <input type="tel" name="phone" required />
+                  <input type="tel" name="phone" />
                   <label>Your Phone</label>
+                  <small class="error"></small>
                 </div>
                 <div class="form-group floating">
-                  <input type="email" name="email" required />
+                  <input type="email" name="email" />
                   <label>Your Email</label>
+                  <small class="error"></small>
                 </div>
               </div>
               <div class="form-group floating full">
@@ -496,25 +519,25 @@ src="https://www.facebook.com/tr?id=1458312591911963&ev=PageView&noscript=1"
             <input
               type="text"
               placeholder="Your Name"
-              required
               name="name"
               style="width: 100%; padding: 10px; margin: 10px 0"
             />
+            <small class="error"></small>
             <input
-              type="phone"
+              type="tel"
               placeholder="Your Phone"
-              required
               name="phone"
               style="width: 100%; padding: 10px; margin: 10px 0"
               maxlength="10"
             />
+            <small class="error"></small>
             <input
               type="email"
               placeholder="Your Email"
-              required
               name="email"
               style="width: 100%; padding: 10px; margin: 10px 0"
             />
+            <small class="error"></small>
             <textarea
               name="message"
               placeholder="Your Message"
@@ -525,161 +548,308 @@ src="https://www.facebook.com/tr?id=1458312591911963&ev=PageView&noscript=1"
               class="g-recaptcha"
               data-sitekey="6Ld3KMArAAAAAIor_SQCQX7s_qRPs9vsWfHlj7yL"
             ></div>
+            <small class="error captcha-error"></small>
             <button class="modal-styled-btn" type="submit">Submit</button>
           </form>
         </div>
       </div>
     </main>
-  
-  <!-- Parallax Js -->
-  <script>
-    window.addEventListener("scroll", function () {
-      const parallax = document.querySelector(".parallax-img");
-      let scrollTop = window.scrollY;
-      parallax.style.transform = "translateY(" + scrollTop * -0.2 + "px)";
-    });
-  </script>
-  <!-- Header Scroll -->
-  <script>
-    window.addEventListener("scroll", function () {
-      const header = document.querySelector("header");
-      if (window.scrollY > 100) {
-        header.classList.add("scrolled");
-      } else {
-        header.classList.remove("scrolled");
-      }
-    });
-  </script>
-  <!-- Carousels -->
-  <script>
-    // Villas Carousel
-    const imagesVillas = [
-      "./assets/images/ami-img/01-villa.jpg",
-      "./assets/images/ami-img/02-villa.jpg",
-      "./assets/images/ami-img/03-villa.jpg",
-      "./assets/images/ami-img/04-villa.jpg",
-      "./assets/images/ami-img/05-villa.jpg",
-      "./assets/images/ami-img/06-villa.jpg",
-      "./assets/images/ami-img/07-villa.jpg",
-      "./assets/images/ami-img/08-villa.jpg",
-    ];
-    let currentVillas = 0;
 
-    function showImageVillas(index) {
-      document.getElementById("carousel-img-villas").src = imagesVillas[index];
-    }
-    function nextImageVillas() {
-      currentVillas = (currentVillas + 1) % imagesVillas.length;
-      showImageVillas(currentVillas);
-    }
-    function prevImageVillas() {
-      currentVillas =
-        (currentVillas - 1 + imagesVillas.length) % imagesVillas.length;
-      showImageVillas(currentVillas);
-    }
-
-    // Apartments Carousel
-    const imagesApts = [
-      "./assets/images/ami-img/01-app.jpg",
-      "./assets/images/ami-img/02-app.jpg",
-      "./assets/images/ami-img/03-app.jpg",
-      "./assets/images/ami-img/Apartment/Z1.png",
-      "./assets/images/ami-img/Apartment/Z2.png",
-      "./assets/images/ami-img/Apartment/Z3.png",
-      "./assets/images/ami-img/Apartment/Z8.png",
-      "./assets/images/ami-img/Apartment/Z11.png",
-      "./assets/images/ami-img/Apartment/Z13.png",
-      "./assets/images/ami-img/Apartment/Z17.png",
-    ];
-    let currentApts = 0;
-
-    function showImageApts(index) {
-      document.getElementById("carousel-img-apts").src = imagesApts[index];
-    }
-    function nextImageApts() {
-      currentApts = (currentApts + 1) % imagesApts.length;
-      showImageApts(currentApts);
-    }
-    function prevImageApts() {
-      currentApts = (currentApts - 1 + imagesApts.length) % imagesApts.length;
-      showImageApts(currentApts);
-    }
-
-    // --- Automatic Carousel ---
-    // Villas autoplay (every 3 seconds)
-    setInterval(nextImageVillas, 3000);
-
-    // Apartments autoplay (every 4 seconds, different interval to avoid sync)
-    setInterval(nextImageApts, 4000);
-
-    // Initialize first images
-    window.onload = () => {
-      showImageVillas(currentVillas);
-      showImageApts(currentApts);
-    };
-  </script>
-  <!-- Mobile Menu -->
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("navLinks");
-
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      navLinks.classList.toggle("active");
-    });
-
-    // Close menu when clicking a link
-    document.querySelectorAll(".nav-links a").forEach((link) => {
-      link.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navLinks.classList.remove("active");
+    <!-- Parallax Js -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const parallax = document.querySelector(".parallax-img");
+        let scrollTop = window.scrollY;
+        parallax.style.transform = "translateY(" + scrollTop * -0.2 + "px)";
       });
-    });
-  </script>
-  <!-- Enquiry Modal -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const modal = document.getElementById("myModal");
-      const closeBtn = modal.querySelector(".close");
-      const enquireBtn = document.getElementById("enquireBtn");
-      const downloadTypeInput = document.getElementById("downloadType");
-
-      // --- Auto popup after 5s ---
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          modal.style.display = "flex";
-        }, 5000);
-      });
-
-      // --- Open modal on Enquire button ---
-      if (enquireBtn) {
-        enquireBtn.addEventListener("click", () => {
-          modal.style.display = "flex";
-        });
-      }
-
-      // --- Open modal on Download buttons ---
-      document.querySelectorAll(".download-btn").forEach((btn) => {
-        btn.addEventListener("click", function () {
-          if (downloadTypeInput) {
-            downloadTypeInput.value = this.dataset.type || "";
-          }
-          modal.style.display = "flex";
-          console.log("Modal opened for:", this.dataset.type);
-        });
-      });
-
-      // --- Close modal on close icon ---
-      closeBtn.addEventListener("click", () => {
-        modal.style.display = "none";
-      });
-
-      // --- Close modal when clicking outside ---
-      window.addEventListener("click", (e) => {
-        if (e.target === modal) {
-          modal.style.display = "none";
+    </script>
+    <!-- Header Scroll -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
         }
       });
+    </script>
+    <!-- Carousels -->
+    <script>
+      // Villas Carousel
+      const imagesVillas = [
+        "./assets/images/ami-img/01-villa.jpg",
+        "./assets/images/ami-img/02-villa.jpg",
+        "./assets/images/ami-img/03-villa.jpg",
+        "./assets/images/ami-img/04-villa.jpg",
+        "./assets/images/ami-img/05-villa.jpg",
+        "./assets/images/ami-img/06-villa.jpg",
+        "./assets/images/ami-img/07-villa.jpg",
+        "./assets/images/ami-img/08-villa.jpg",
+      ];
+      let currentVillas = 0;
+
+      function showImageVillas(index) {
+        document.getElementById("carousel-img-villas").src =
+          imagesVillas[index];
+      }
+      function nextImageVillas() {
+        currentVillas = (currentVillas + 1) % imagesVillas.length;
+        showImageVillas(currentVillas);
+      }
+      function prevImageVillas() {
+        currentVillas =
+          (currentVillas - 1 + imagesVillas.length) % imagesVillas.length;
+        showImageVillas(currentVillas);
+      }
+
+      // Apartments Carousel
+      const imagesApts = [
+        "./assets/images/ami-img/01-app.jpg",
+        "./assets/images/ami-img/02-app.jpg",
+        "./assets/images/ami-img/03-app.jpg",
+        "./assets/images/ami-img/Apartment/Z1.png",
+        "./assets/images/ami-img/Apartment/Z2.png",
+        "./assets/images/ami-img/Apartment/Z3.png",
+        "./assets/images/ami-img/Apartment/Z8.png",
+        "./assets/images/ami-img/Apartment/Z11.png",
+        "./assets/images/ami-img/Apartment/Z13.png",
+        "./assets/images/ami-img/Apartment/Z17.png",
+      ];
+      let currentApts = 0;
+
+      function showImageApts(index) {
+        document.getElementById("carousel-img-apts").src = imagesApts[index];
+      }
+      function nextImageApts() {
+        currentApts = (currentApts + 1) % imagesApts.length;
+        showImageApts(currentApts);
+      }
+      function prevImageApts() {
+        currentApts = (currentApts - 1 + imagesApts.length) % imagesApts.length;
+        showImageApts(currentApts);
+      }
+
+      // --- Automatic Carousel ---
+      // Villas autoplay (every 3 seconds)
+      setInterval(nextImageVillas, 3000);
+
+      // Apartments autoplay (every 4 seconds, different interval to avoid sync)
+      setInterval(nextImageApts, 4000);
+
+      // Initialize first images
+      window.onload = () => {
+        showImageVillas(currentVillas);
+        showImageApts(currentApts);
+      };
+    </script>
+    <!-- Mobile Menu -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+      });
+
+      // Close menu when clicking a link
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navLinks.classList.remove("active");
+        });
+      });
+    </script>
+    <!-- Enquiry Modal -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const modal = document.getElementById("myModal");
+        const closeBtn = modal.querySelector(".close");
+        const enquireBtn = document.getElementById("enquireBtn");
+        const downloadTypeInput = document.getElementById("downloadType");
+
+        // --- Auto popup after 5s ---
+        window.addEventListener("load", () => {
+          setTimeout(() => {
+            modal.style.display = "flex";
+          }, 5000);
+        });
+
+        // --- Open modal on Enquire button ---
+        if (enquireBtn) {
+          enquireBtn.addEventListener("click", () => {
+            modal.style.display = "flex";
+          });
+        }
+
+        // --- Open modal on Download buttons ---
+        document.querySelectorAll(".download-btn").forEach((btn) => {
+          btn.addEventListener("click", function () {
+            if (downloadTypeInput) {
+              downloadTypeInput.value = this.dataset.type || "";
+            }
+            modal.style.display = "flex";
+            console.log("Modal opened for:", this.dataset.type);
+          });
+        });
+
+        // --- Close modal on close icon ---
+        closeBtn.addEventListener("click", () => {
+          modal.style.display = "none";
+        });
+
+        // --- Close modal when clicking outside ---
+        window.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+      });
+    </script>
+    <!-- Main Slider -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // 3 desktop images
+        const desktopImages = [
+          "./assets/images/banner/Green Housing Lavender web banner - 1.jpg",
+          "./assets/images/banner/Green Housing Lavender web banner - 2.jpg",
+        ];
+
+        // 3 mobile images
+        const mobileImages = [
+          "./assets/images/banner/Green Housing Lavender Mobile banner - 1.jpeg",
+          "./assets/images/banner/Green Housing Lavender Mobile banner - 2.jpeg",
+        ];
+
+        const section = document.querySelector(".main-slider");
+
+        // Decide which set to use
+        let images = window.innerWidth <= 768 ? mobileImages : desktopImages;
+
+        let index = 0;
+        function changeSlide() {
+          section.style.backgroundImage = `url("${images[index]}")`;
+          index = (index + 1) % images.length;
+        }
+
+        // Run immediately + loop every 4 sec
+        changeSlide();
+        setInterval(changeSlide, 4000);
+      });
+    </script>
+
+    <!-- Validation -->
+    <!-- ✅ Script for enquiry-form1 -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sheetURL =
+          "https://script.google.com/macros/s/AKfycbxlPQE1M48uP4RmOwSEqW94EqSST6Fnzyhz1HwhVkdLIWKzq2SanfiiIX7eHdZx1ZFk/exec";
+        const crmURL =
+          "https://aubackend.adventurus.in/api/webhook/third-party";
+
+        const form1 = document.getElementById("enquiry-form1");
+        if (form1) {
+          form1.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const name = form1.querySelector("[name='name']");
+            const phone = form1.querySelector("[name='phone']");
+            const email = form1.querySelector("[name='email']");
+            const captchaError = form1.querySelector(".captcha-error");
+
+            let isValid = true;
+
+            // Name
+            if (!validateField(name, "Name is required")) isValid = false;
+
+            // Phone
+            if (!validatePhone(phone)) isValid = false;
+
+            // Email
+            if (!validateEmail(email)) isValid = false;
+
+            // CAPTCHA
+            const captchaResponse = grecaptcha.getResponse();
+            if (!captchaResponse) {
+              captchaError.textContent = "Please verify captcha";
+              isValid = false;
+            } else {
+              captchaError.textContent = "";
+            }
+
+            // STOP if invalid
+            if (!isValid) return;
+
+            const submitBtn = form1.querySelector("button[type='submit']");
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = "Submitting...";
+            submitBtn.disabled = true;
+
+            const formData = new FormData(form1);
+            formData.append("g-recaptcha-response", captchaResponse);
+
+            // 1. Google Sheets
+            fetch(sheetURL, { method: "POST", body: formData })
+              .then((res) => res.json())
+              .then((data) => {
+                if (data.result === "success") {
+                  // 2. CRM
+                  const crmPayload = {
+                    leadEmail: formData.get("email"),
+                    leadPhoneNumber: "+91" + formData.get("phone"),
+                    leadSource: "Google",
+                    leadStatus: "New",
+                    leadName: formData.get("name"),
+                    project: 5,
+                    createBy: 6,
+                    leadNotes: formData.get("message"),
+                    company_id: 3,
+                  };
+
+                  return fetch(crmURL, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(crmPayload),
+                  });
+                }
+              })
+              .then((res) => (res ? res.json() : null))
+              .then((crmRes) => {
+                console.log("CRM response (Form1):", crmRes);
+                form1.reset();
+                grecaptcha.reset();
+
+                // PDF download (only for form1)
+                const type = document.getElementById("downloadType").value;
+                const pdfFiles = {
+                  apartmentvilla: "Lavendar_Floor_Plan.pdf",
+                  brochure: "Lavendar_Brand_Brochure.pdf",
+                };
+                if (type && pdfFiles[type]) {
+                  const pdf = pdfFiles[type];
+                  const link = document.createElement("a");
+                  link.href = pdf;
+                  link.download = pdf;
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }
+
+                window.location.href = "thankyou.html";
+              })
+              .catch((err) => {
+                console.error("Error (Form1):", err);
+                alert("Failed to submit form.");
+              })
+              .finally(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+              });
+          });
+        }
+      });
+<<<<<<< Updated upstream
     });
   </script>
   <!-- Main Slider -->
@@ -690,88 +860,76 @@ src="https://www.facebook.com/tr?id=1458312591911963&ev=PageView&noscript=1"
         "./assets/images/banner/Green Housing Lavender web banner - 1.jpeg",
         "./assets/images/banner/Green Housing Lavender web banner - 2.jpeg",
       ];
+=======
+    </script>
+    <!-- ✅ Script for enquiryForm -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sheetURL =
+          "https://script.google.com/macros/s/AKfycbxlPQE1M48uP4RmOwSEqW94EqSST6Fnzyhz1HwhVkdLIWKzq2SanfiiIX7eHdZx1ZFk/exec";
+        const crmURL =
+          "https://aubackend.adventurus.in/api/webhook/third-party";
+>>>>>>> Stashed changes
 
-      // 3 mobile images
-      const mobileImages = [
-        "./assets/images/banner/Green Housing Lavender Mobile banner - 1.jpg",
-        "./assets/images/banner/Green Housing Lavender Mobile banner - 2.jpg",
-      ];
+        const form2 = document.getElementById("enquiryForm");
+        if (form2) {
+          form2.addEventListener("submit", function (e) {
+            e.preventDefault();
 
-      const section = document.querySelector(".main-slider");
+            const name = form1.querySelector("[name='name']");
+            const phone = form1.querySelector("[name='phone']");
+            const email = form1.querySelector("[name='email']");
+            const captchaError = form1.querySelector(".captcha-error");
 
-      // Decide which set to use
-      let images = window.innerWidth <= 768 ? mobileImages : desktopImages;
+            let isValid = true;
 
-      let index = 0;
-      function changeSlide() {
-        section.style.backgroundImage = `url("${images[index]}")`;
-        index = (index + 1) % images.length;
-      }
+            // Name
+            if (!validateField(name, "Name is required")) isValid = false;
 
-      // Run immediately + loop every 4 sec
-      changeSlide();
-      setInterval(changeSlide, 4000);
-    });
-  </script>
-  <!-- Validation -->
-  <!-- ✅ Script for enquiry-form1 -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const sheetURL =
-        "https://script.google.com/macros/s/AKfycbxlPQE1M48uP4RmOwSEqW94EqSST6Fnzyhz1HwhVkdLIWKzq2SanfiiIX7eHdZx1ZFk/exec";
-      const crmURL = "https://aubackend.adventurus.in/api/webhook/third-party";
+            // Phone
+            if (!validatePhone(phone)) isValid = false;
 
-      const form1 = document.getElementById("enquiry-form1");
-      if (form1) {
-        form1.addEventListener("submit", function (e) {
-          e.preventDefault();
+            // Email
+            if (!validateEmail(email)) isValid = false;
 
-          // reCAPTCHA validation for form1
-          const captchaResponse = grecaptcha.getResponse();
-          if (!captchaResponse) {
-            alert("Please complete the reCAPTCHA before submitting.");
-            return;
-          }
+            // CAPTCHA
+            const captchaResponse = grecaptcha.getResponse();
+            if (!captchaResponse) {
+              captchaError.textContent = "Please verify captcha";
+              isValid = false;
+            } else {
+              captchaError.textContent = "";
+            }
 
-          const submitBtn = form1.querySelector("button[type='submit']");
-          const originalText = submitBtn.textContent;
-          submitBtn.textContent = "Submitting...";
-          submitBtn.disabled = true;
+            // STOP if invalid
+            if (!isValid) return;
 
-          const formData = new FormData(form1);
-          formData.append("g-recaptcha-response", captchaResponse);
+            const submitBtn = form2.querySelector("button[type='submit']");
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = "Submitting...";
+            submitBtn.disabled = true;
 
-          // 1. Google Sheets
-          fetch(sheetURL, { method: "POST", body: formData })
-            .then((res) => res.json())
-            .then((data) => {
-              if (data.result === "success") {
-                // 2. CRM
-                const crmPayload = {
-                  leadEmail: formData.get("email"),
-                  leadPhoneNumber: "+91" + formData.get("phone"),
-                  leadSource: "Google",
-                  leadStatus: "New",
-                  leadName: formData.get("name"),
-                  project: 5,
-                  createBy: 6,
-                  leadNotes: formData.get("message"),
-                  company_id: 3,
-                };
+            const formData = new FormData(form2);
 
-                return fetch(crmURL, {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify(crmPayload),
-                });
-              }
-            })
-            .then((res) => (res ? res.json() : null))
-            .then((crmRes) => {
-              console.log("CRM response (Form1):", crmRes);
-              form1.reset();
-              grecaptcha.reset();
+            // 1. Google Sheets
+            fetch(sheetURL, { method: "POST", body: formData })
+              .then((res) => res.json())
+              .then((data) => {
+                if (data.result === "success") {
+                  // 2. CRM
+                  const crmPayload = {
+                    leadEmail: formData.get("email"),
+                    leadPhoneNumber: "+91" + formData.get("phone"),
+                    leadSource: "Google",
+                    leadStatus: "New",
+                    leadName: formData.get("name"),
+                    project: 5,
+                    createBy: 6,
+                    leadNotes: formData.get("message"),
+                    company_id: 3,
+                  };
 
+<<<<<<< Updated upstream
               // PDF download (only for form1)
               const type = document.getElementById("downloadType").value;
               const pdfFiles = {
@@ -902,27 +1060,169 @@ src="https://www.facebook.com/tr?id=1458312591911963&ev=PageView&noscript=1"
           name: { label: "Full Name : ", placeholder: "So we know what to call you", required: true },
           email: { label: "Email : ", placeholder: "For brochures and price sheet", required: true },
           phone: { label: "Phone : ", placeholder: "For Priority access", required: true }
+=======
+                  return fetch(crmURL, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(crmPayload),
+                  });
+                }
+              })
+              .then((res) => (res ? res.json() : null))
+              .then((crmRes) => {
+                console.log("CRM response (Form2):", crmRes);
+                form2.reset();
+                window.location.href = "thankyou.html";
+              })
+              .catch((err) => {
+                console.error("Error (Form2):", err);
+                alert("Failed to submit form.");
+              })
+              .finally(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+              });
+          });
+>>>>>>> Stashed changes
         }
-      },
+      });
+    </script>
 
-      appointmentForm: {
-        title: "Book Your Site Visit",
-        subtitle: "Schedule your Site visit in seconds",
-        fields: {
-          date: { label: "Site visit Date", placeholder: "Enter your site visit date", required: true },
-          time: { label: "Site Visit Time", placeholder: "Enter your site visit time", required: true },
-          pickup_required: { label: "Pickup Need", placeholder: "", required: false },
-          pickup_address: { label: "Pickup Address", placeholder: "Enter your pickup address", required: false }
+    <script>
+      function validateField(input, message) {
+        const errorEl = input.nextElementSibling;
+        if (!input.value.trim()) {
+          errorEl.textContent = message;
+          input.classList.add("error-border");
+          return false;
+        } else {
+          errorEl.textContent = "";
+          input.classList.remove("error-border");
+          return true;
         }
       }
-    };
-    const script = document.createElement('script');
-    script.src = `${url}/public/chat-embed.js`;
-    script.onload = () => console.log("✅ Chat widget script loaded successfully");
-    script.onerror = () => console.error("❌ Failed to load chat widget script");
-    document.body.appendChild(script);
-  </script>
 
+      function validateEmail(input) {
+        const errorEl = input.nextElementSibling;
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!regex.test(input.value.trim())) {
+          errorEl.textContent = "Enter valid email";
+          input.classList.add("error-border");
+          return false;
+        } else {
+          errorEl.textContent = "";
+          input.classList.remove("error-border");
+          return true;
+        }
+      }
+
+      function validatePhone(input) {
+        const errorEl = input.nextElementSibling;
+        const regex = /^[0-9]{10}$/;
+
+        if (!regex.test(input.value.trim())) {
+          errorEl.textContent = "Enter valid 10-digit number";
+          input.classList.add("error-border");
+          return false;
+        } else {
+          errorEl.textContent = "";
+          input.classList.remove("error-border");
+          return true;
+        }
+      }
+    </script>
+
+    <script>
+      const url = "https://aubackend.adventurus.in";
+      window.WIDGET_CONFIG = {
+        apiUrl: `${url}`,
+        aiUrl: "https://chatagent.adventurus.in",
+        apiKey: "fac796d6-8a35-4ab6-b554-81cdb752205e",
+        project_id: "210",
+        position: "bottom-right",
+        theme: "light",
+        language: "en",
+        autoOpen: true,
+        requireUserDetails: true,
+        branding: {
+          name: "GREENFIELD",
+          subtitle: "Your Personal Home Advisor",
+          logo: "https://lavender.greenfieldhousingindia.com/assets/images/faviocn.png",
+          buttonText: "Book a site visit",
+          headerBgColor: "#aaa5ffeb",
+          bodyBgColor:
+            "linear-gradient(to right top, #b97ff0, #a573ea, #8f68e4, #775ddf, #5a53d9)",
+          buttonBgColor:
+            "linear-gradient(to right, #caa0f7, #c093f4, #b586f2, #aa79ef, #9e6ced)",
+          headerColor: "#fff",
+          bodyColor: "#fff",
+          bodyDescriptionColor: "#e6e7e8",
+        },
+
+        welcomeMessage: {
+          title: "",
+          content: "",
+        },
+
+        userDetailsForm: {
+          title: "Ready To Own Your Next Address?",
+          subtitle: "Let's get to know you.",
+          description:
+            "Your details are safe. Only relevant property updateds.",
+          fields: {
+            name: {
+              label: "Full Name : ",
+              placeholder: "So we know what to call you",
+              required: true,
+            },
+            email: {
+              label: "Email : ",
+              placeholder: "For brochures and price sheet",
+              required: true,
+            },
+            phone: {
+              label: "Phone : ",
+              placeholder: "For Priority access",
+              required: true,
+            },
+          },
+        },
+
+        appointmentForm: {
+          title: "Book Your Site Visit",
+          subtitle: "Schedule your Site visit in seconds",
+          fields: {
+            date: {
+              label: "Site visit Date",
+              placeholder: "Enter your site visit date",
+              required: true,
+            },
+            time: {
+              label: "Site Visit Time",
+              placeholder: "Enter your site visit time",
+              required: true,
+            },
+            pickup_required: {
+              label: "Pickup Need",
+              placeholder: "",
+              required: false,
+            },
+            pickup_address: {
+              label: "Pickup Address",
+              placeholder: "Enter your pickup address",
+              required: false,
+            },
+          },
+        },
+      };
+      const script = document.createElement("script");
+      script.src = `${url}/public/chat-embed.js`;
+      script.onload = () =>
+        console.log("✅ Chat widget script loaded successfully");
+      script.onerror = () =>
+        console.error("❌ Failed to load chat widget script");
+      document.body.appendChild(script);
+    </script>
   </body>
-
 </html>
