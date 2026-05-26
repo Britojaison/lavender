@@ -2,32 +2,41 @@
 <html lang="en">
   <head>
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1458312591911963');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1458312591911963&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luxury Apartments & Villas in Coimbatore</title>
-    <link rel="stylesheet" href="./assets/scss/style.css" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/faviocn.png"
-      type="image/x-icon"
-    />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1458312591911963");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1458312591911963&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -42,887 +51,105 @@ src="https://www.facebook.com/tr?id=1458312591911963&ev=PageView&noscript=1"
 
       gtag("config", "AW-17576117111");
     </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Apartments & Villas in Coimbatore</title>
+    <script type="module" crossorigin src="/assets/index-UFqCqgRj.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-L26M4YH8.css">
   </head>
   <body>
-    <main>
-      <!-- floating download -->
-      <button class="download-btn floating-download-btn" data-type="brochure">
-        📄 Download Brochure
-      </button>
-      <!-- header -->
-      <header>
-        <div class="logo">
-          <img src="./assets/images/logo.png" alt="logo" />
-        </div>
-        <nav class="nav-links" id="navLinks">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#project">Project</a>
-          <a href="#amenities">Amenities</a>
+    <div id="root"></div>
+    <script>
+      const url = "https://aubackend.adventurus.in";
+      window.WIDGET_CONFIG = {
+        apiUrl: `${url}`,
+        aiUrl: "https://chatagent.adventurus.in",
+        apiKey: "fac796d6-8a35-4ab6-b554-81cdb752205e",
+        project_id: "210",
+        position: "bottom-right",
+        theme: "light",
+        language: "en",
+        autoOpen: true,
+        requireUserDetails: true,
+        branding: {
+          name: "GREENFIELD",
+          subtitle: "Your Personal Home Advisor",
+          logo: "/lav-desgin-chat-agent-icon.png",
+          buttonText: "Book a site visit",
+          headerBgColor: "#aaa5ffeb",
+          bodyBgColor:
+            "linear-gradient(to right top, #b97ff0, #a573ea, #8f68e4, #775ddf, #5a53d9)",
+          buttonBgColor:
+            "linear-gradient(to right, #caa0f7, #c093f4, #b586f2, #aa79ef, #9e6ced)",
+          headerColor: "#fff",
+          bodyColor: "#fff",
+          bodyDescriptionColor: "#e6e7e8",
+        },
 
-          <a href="#location">Location</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="contact">
-          <!-- enquire -->
-          <button id="enquireBtn">Enquire Now</button>
-        </div>
-        <div class="hamburger" id="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </header>
+        welcomeMessage: {
+          title: "",
+          content: "",
+        },
 
-      <!-- main slider -->
-      <section class="main-slider" id="home"></section>
+        userDetailsForm: {
+          title: "Ready To Own Your Next Address?",
+          subtitle: "Let's get to know you.",
+          description:
+            "Your details are safe. Only relevant property updateds.",
+          fields: {
+            name: {
+              label: "Full Name : ",
+              placeholder: "So we know what to call you",
+              required: true,
+            },
+            email: {
+              label: "Email : ",
+              placeholder: "For brochures and price sheet",
+              required: true,
+            },
+            phone: {
+              label: "Phone : ",
+              placeholder: "For Priority access",
+              required: true,
+            },
+          },
+        },
 
-      <!-- residence section -->
-      <section class="residence-section" id="about">
-        <div class="left-content">
-          <!-- <a href="#" class="download-link">
-            <i class="icon"></i> Download Brochure
-          </a> -->
-          <!-- <span>About</span> -->
-          <h1>One address. <br />Two ways to live</h1>
-          <p>
-            This goes beyond the usual gated project. Luxury and comfort join
-            forces and deliver. 3 BHK flats and 4 BHK villas? They complete each
-            other perfectly. Right behind NGP Institutions, Kalapatti’s rising
-            star, this spot brings city energy and peaceful privacy together.
-            Crave the villa breeze or the slick ease of a flat? Your call.
-            Either way, you live large, you live premium. An address like no
-            other, carved in calm and class, Where every brick whispers of
-            futures that surpass. Not pinned by maps, but felt in pride and
-            place, A landmark for those who lead, not chase. Here, location
-            speaks louder than name or glass.
-          </p>
-
-          <!-- <a href="#" class="view-gallery">View Gallery</a> -->
-        </div>
-
-        <div class="right-content">
-          <div class="img-stack">
-            <img src="./assets/images/second-back.jpg" class="img-back" />
-            <img
-              src="./assets/images/second.jpg"
-              class="img-front parallax-img"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- reasons section -->
-      <section class="reasons-section">
-        <div class="reasons-container">
-          <h2><span>Top</span> Reasons to Choose Lavender</h2>
-          <div class="reasons-list">
-            <div class="reason-item">
-              <img src="./assets/images/gate.png" alt="Gated Community" />
-              <p>Thoughtfully gated community</p>
-            </div>
-            <div class="reason-item">
-              <img src="./assets/images/dimensions.png" alt="Layouts" />
-              <p>Spacious and well-designed layouts</p>
-            </div>
-            <div class="reason-item">
-              <img src="./assets/images/amenities.png" alt="Amenities" />
-              <p>Curated signature amenities</p>
-            </div>
-            <div class="reason-item">
-              <img src="./assets/images/stroke.png" alt="Location" />
-              <p>Prime and strategic location</p>
-            </div>
-            <div class="reason-item">
-              <img src="./assets/images/cardinal-points.png" alt="Vastu" />
-              <p>Vastu-compliant homes</p>
-            </div>
-            <div class="reason-item">
-              <img src="./assets/images/neh.png" alt="Neighbourhood" />
-              <p>Rapidly developing residential</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Villas Section -->
-      <section class="property-gallery" id="project">
-        <div class="gallery-left">
-          <h2>Lavender Villas</h2>
-          <p class="description">
-            Choose your elegantly designed 4 BHK Villas with expansive layouts,
-            perfect for a lifestyle of comfort and sophistication.
-          </p>
-          <p>
-            Offering spacious villas ranging from Rapidly developing residential
-            neighbourhood 3903 sq.ft. to 4236 sq.ft
-          </p>
-
-          <div class="info-blocks">
-            <div>
-              <img src="./assets/images/dim.png" alt="luxury-icon" />
-              <p>17 LUXURY VILLAS</p>
-            </div>
-            <div>
-              <img src="./assets/images/bedroom1.png" alt="bed-icon" />
-              <p>4 BHK VILLAS</p>
-            </div>
-            <div>
-              <img
-                src="./assets/images/full-screen.png"
-                class="img-re"
-                alt="size-icon"
-              />
-              <p>RANGE OF 4236 SQ. FT.</p>
-            </div>
-            <div>
-              <img
-                src="./assets/images/verified.png"
-                class="img-re"
-                alt="verified-icon"
-              />
-              <p>RERA APPROVED</p>
-            </div>
-          </div>
-          <!-- <button class="download-btn" data-type="villa">📄 Download Villa Plan</button> -->
-        </div>
-
-        <div class="gallery-right">
-          <div class="photos gallery-content active photo-carousel">
-            <button class="arrow left" onclick="prevImageVillas()">
-              &#8249;
-            </button>
-            <img
-              id="carousel-img-villas"
-              src="./assets/images/ami-img/01-villa.jpg"
-              alt="Villa Photo"
-            />
-            <button class="arrow right" onclick="nextImageVillas()">
-              &#8250;
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Apartments Section -->
-      <section class="property-gallery1">
-        <div class="gallery-right">
-          <div class="photos gallery-content active photo-carousel">
-            <button class="arrow left" onclick="prevImageApts()">
-              &#8249;
-            </button>
-            <img
-              id="carousel-img-apts"
-              src="./assets/images/ami-img/01-app.jpg"
-              alt="Apartment Photo"
-            />
-            <button class="arrow right" onclick="nextImageApts()">
-              &#8250;
-            </button>
-          </div>
-        </div>
-
-        <div class="gallery-left">
-          <h2>Lavender Apartments</h2>
-          <p class="description">
-            Redefining luxury living with exquisite apartments
-          </p>
-          <p>
-            Thoughtfully crafted apartments spanning 1800 sq. ft. to 2200 sq.
-            ft., offering a perfect blend of luxury and space.
-          </p>
-          <div class="info-blocks">
-            <div>
-              <img src="./assets/images/dim.png" alt="luxury-icon" />
-              <p>35 LUXURY APARTMENTS</p>
-            </div>
-            <div>
-              <img src="./assets/images/bedroom1.png" alt="bed-icon" />
-              <p>3 BHK APARTMENTS</p>
-            </div>
-            <div>
-              <img
-                src="./assets/images/full-screen.png"
-                class="img-re"
-                alt="size-icon"
-              />
-              <p>RANGE OF 2200 SQ. FT.</p>
-            </div>
-            <div>
-              <img
-                src="./assets/images/verified.png"
-                class="img-re"
-                alt="verified-icon"
-              />
-              <p>RERA APPROVED</p>
-            </div>
-          </div>
-          <!-- <button class="download-btn" data-type="apartment">📄 Download Apartment Plan</button> -->
-        </div>
-      </section>
-
-      <!-- Floor Plan Section -->
-      <div class="floor-plan-btn-section">
-        <button
-          class="download-btn download-floorplan"
-          data-type="apartmentvilla"
-        >
-          Download Floor Plan
-        </button>
-      </div>
-
-      <!-- Features Section -->
-      <section class="features-section" id="amenities">
-        <h1>Amenities</h1>
-        <div class="features-grid">
-          <div class="grid-item active">
-            <img src="./assets/images/security-camera.png" alt="Icon" />
-            <h3>24/7 Security</h3>
-            <p>
-              Peace of mind round the clock. Secured access & surveillance to
-              keep you safe.
-            </p>
-          </div>
-          <div class="grid-item">
-            <img src="./assets/images/treadmill.png" alt="Icon" />
-            <h3>Fitness Center</h3>
-            <p>
-              A thoughtfully curated gym space designed to elevate your wellness
-              journey.
-            </p>
-          </div>
-          <div class="grid-item active">
-            <img src="./assets/images/sewage.png" alt="Icon" />
-            <h3>Sewage treatment plant</h3>
-            <p>
-              Eco-conscious living powered by modern waste management solutions.
-            </p>
-          </div>
-          <div class="grid-item">
-            <img src="./assets/images/night-club.png" alt="Icon" />
-            <h3>Club House</h3>
-            <p>
-              A contemporary social hub equipped for leisure, gatherings, and
-              everyday indulgence.
-            </p>
-          </div>
-          <div class="grid-item">
-            <img src="./assets/images/people.png" alt="Icon" />
-            <h3>Indoor Games</h3>
-            <p>
-              Leisure takes center stage in our thoughtfully built indoor
-              spaces.
-            </p>
-          </div>
-          <div class="grid-item active">
-            <img src="./assets/images/park.png" alt="Icon" />
-            <h3>Mini Theater</h3>
-            <p>
-              Immerse yourself in movies with unmatched comfort and cinematic
-              luxury.
-            </p>
-          </div>
-          <div class="grid-item">
-            <img src="./assets/images/swimming-pool.png" alt="Icon" />
-            <h3>Rooftop Swimming Pool</h3>
-            <p>
-              A tranquil rooftop pool that brings resort-style relaxation to
-              your everyday routine.
-            </p>
-          </div>
-          <div class="grid-item active">
-            <img src="./assets/images/swings.png" alt="Icon" />
-            <h3>Multipurpose Hall</h3>
-            <p>
-              A grand space for memorable events, celebrations, and social
-              gatherings.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Location Section -->
-      <section class="location-section" id="location">
-        <div class="location-content">
-          <!-- Left Side: Text + Location Advantages -->
-          <div class="location-text">
-            <!-- <p class="sub-heading">Built for Today. Ready for Tomorrow</p> -->
-            <h2>Location Advantages</h2>
-            <!-- <p class="description">
-              Whether you're searching for a premium villas near airport,
-              investing in villas for sale in Kalapatti, or simply choosing a
-              lifestyle upgrade, Lavender gives you the rare combination of
-              privacy, flexibility, and long-term value.
-            </p> -->
-
-            <!-- Location Advantages -->
-            <div class="location-advantages">
-              <div class="advantage-column">
-                <h3>Colleges</h3>
-                <ul>
-                  <li>NGP Institutions <span>1.5 Km</span></li>
-                  <li>SNS College of Technology <span>5 Km</span></li>
-                  <li>CIT <span>7 Km</span></li>
-                  <li>PSG IMSR <span>8.2 Km</span></li>
-                </ul>
-
-                <h3>Schools</h3>
-                <ul>
-                  <li>Anan International School <span>1 Km</span></li>
-                  <li>The NGP Schools <span>1.5 Km</span></li>
-                  <li>CMIS International school <span>2 Km</span></li>
-                </ul>
-
-                <h3>IT Parks</h3>
-                <ul>
-                  <li>Global Tech Park <span>3 Km</span></li>
-                  <li>SVB Tech park <span>3.5 Km</span></li>
-                  <li>ELCOT SEZ <span>5.5 Km</span></li>
-                </ul>
-              </div>
-
-              <div class="advantage-column">
-                <h3>Hospitals</h3>
-                <ul>
-                  <li>Lotus Eye Hospital <span>4.5 Km</span></li>
-                  <li>KMCH Hospital <span>5.4 Km</span></li>
-                  <li>Kumaran Hospital <span>6 Km</span></li>
-                </ul>
-
-                <h3>Malls</h3>
-                <ul>
-                  <li>Prozone Mall <span>6.8 Km</span></li>
-                  <li>Fun Republic Mall <span>8.2 Km</span></li>
-                  <li>LuLu Hypermarket <span>10 Km</span></li>
-                </ul>
-
-                <h3>Convenience</h3>
-                <ul>
-                  <li>Airport <span>5.5 Km</span></li>
-                  <li>Singanallur Bus Terminal <span>10 Km</span></li>
-                  <li>Coimbatore Junction <span>14 Km</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Side: Map -->
-          <div class="location-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5614.72680604473!2d77.02540338199374!3d11.068373363139681!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f90029614b1f%3A0xc8f80799deff384b!2sGreenfield%20Lavender!5e0!3m2!1sen!2sin!4v1752669534283!5m2!1sen!2sin"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="contact-section" id="contact">
-        <div class="contact-container">
-          <!-- Left Info -->
-          <div class="contact-info">
-            <h2>Let's Get in Touch</h2>
-            <p>
-              Set within one of the best residential projects Coimbatore, it's
-              an invitation to live the life you’ve always imagined. Be a part
-              of modern living!
-            </p>
-
-            <ul>
-              <li><strong>Phone:</strong> +91 70922 85222</li>
-              <li><strong>Email:</strong> saleslavender@gfhil.com</li>
-              <li>
-                <strong>Location:</strong> No.14/15, A1, Sitra Road, Kalapatti,
-                Near BOSCH Global Software Technologies, Coimbatore - 641 048.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Right Stylish Form -->
-          <div class="contact-form">
-            <form id="enquiryForm">
-              <div class="form-row">
-                <div class="form-group floating">
-                  <input type="text" name="name" required />
-                  <label>Your Name</label>
-                </div>
-                <div class="form-group floating">
-                  <input type="tel" name="phone" required />
-                  <label>Your Phone</label>
-                </div>
-                <div class="form-group floating">
-                  <input type="email" name="email" required />
-                  <label>Your Email</label>
-                </div>
-              </div>
-              <div class="form-group floating full">
-                <textarea name="message" rows="5"></textarea>
-                <label>Your Message</label>
-              </div>
-              <button type="submit" class="styled-btn">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <!-- RERA Section -->
-      <section class="rera-section">
-        <p>TN/11/Building/0121/2025 | rera.tn.gov.in</p>
-      </section>
-
-      <!-- Footer Section -->
-      <footer>
-        <p>&copy; 2025 Lavender. All rights reserved.</p>
-        <small
-          >Desgined & Developed by
-          <a href="https://adventurus.co/" target="_blank">Adventurus</a></small
-        >
-      </footer>
-
-      <!-- Modal -->
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2>Enquiry Form</h2>
-          <!-- <p>Fill in your details and we’ll get back to you soon!</p> -->
-          <form id="enquiry-form1">
-            <input type="hidden" name="downloadType" id="downloadType" />
-            <input
-              type="text"
-              placeholder="Your Name"
-              required
-              name="name"
-              style="width: 100%; padding: 10px; margin: 10px 0"
-            />
-            <input
-              type="phone"
-              placeholder="Your Phone"
-              required
-              name="phone"
-              style="width: 100%; padding: 10px; margin: 10px 0"
-              maxlength="10"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              required
-              name="email"
-              style="width: 100%; padding: 10px; margin: 10px 0"
-            />
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              rows="3"
-              style="width: 100%; padding: 10px; margin: 10px 0"
-            ></textarea>
-            <div
-              class="g-recaptcha"
-              data-sitekey="6Ld3KMArAAAAAIor_SQCQX7s_qRPs9vsWfHlj7yL"
-            ></div>
-            <button class="modal-styled-btn" type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
-    </main>
-  
-  <!-- Parallax Js -->
-  <script>
-    window.addEventListener("scroll", function () {
-      const parallax = document.querySelector(".parallax-img");
-      let scrollTop = window.scrollY;
-      parallax.style.transform = "translateY(" + scrollTop * -0.2 + "px)";
-    });
-  </script>
-  <!-- Header Scroll -->
-  <script>
-    window.addEventListener("scroll", function () {
-      const header = document.querySelector("header");
-      if (window.scrollY > 100) {
-        header.classList.add("scrolled");
-      } else {
-        header.classList.remove("scrolled");
-      }
-    });
-  </script>
-  <!-- Carousels -->
-  <script>
-    // Villas Carousel
-    const imagesVillas = [
-      "./assets/images/ami-img/01-villa.jpg",
-      "./assets/images/ami-img/02-villa.jpg",
-      "./assets/images/ami-img/03-villa.jpg",
-      "./assets/images/ami-img/04-villa.jpg",
-      "./assets/images/ami-img/05-villa.jpg",
-      "./assets/images/ami-img/06-villa.jpg",
-      "./assets/images/ami-img/07-villa.jpg",
-      "./assets/images/ami-img/08-villa.jpg",
-    ];
-    let currentVillas = 0;
-
-    function showImageVillas(index) {
-      document.getElementById("carousel-img-villas").src = imagesVillas[index];
-    }
-    function nextImageVillas() {
-      currentVillas = (currentVillas + 1) % imagesVillas.length;
-      showImageVillas(currentVillas);
-    }
-    function prevImageVillas() {
-      currentVillas =
-        (currentVillas - 1 + imagesVillas.length) % imagesVillas.length;
-      showImageVillas(currentVillas);
-    }
-
-    // Apartments Carousel
-    const imagesApts = [
-      "./assets/images/ami-img/01-app.jpg",
-      "./assets/images/ami-img/02-app.jpg",
-      "./assets/images/ami-img/03-app.jpg",
-      "./assets/images/ami-img/Apartment/Z1.png",
-      "./assets/images/ami-img/Apartment/Z2.png",
-      "./assets/images/ami-img/Apartment/Z3.png",
-      "./assets/images/ami-img/Apartment/Z8.png",
-      "./assets/images/ami-img/Apartment/Z11.png",
-      "./assets/images/ami-img/Apartment/Z13.png",
-      "./assets/images/ami-img/Apartment/Z17.png",
-    ];
-    let currentApts = 0;
-
-    function showImageApts(index) {
-      document.getElementById("carousel-img-apts").src = imagesApts[index];
-    }
-    function nextImageApts() {
-      currentApts = (currentApts + 1) % imagesApts.length;
-      showImageApts(currentApts);
-    }
-    function prevImageApts() {
-      currentApts = (currentApts - 1 + imagesApts.length) % imagesApts.length;
-      showImageApts(currentApts);
-    }
-
-    // --- Automatic Carousel ---
-    // Villas autoplay (every 3 seconds)
-    setInterval(nextImageVillas, 3000);
-
-    // Apartments autoplay (every 4 seconds, different interval to avoid sync)
-    setInterval(nextImageApts, 4000);
-
-    // Initialize first images
-    window.onload = () => {
-      showImageVillas(currentVillas);
-      showImageApts(currentApts);
-    };
-  </script>
-  <!-- Mobile Menu -->
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("navLinks");
-
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      navLinks.classList.toggle("active");
-    });
-
-    // Close menu when clicking a link
-    document.querySelectorAll(".nav-links a").forEach((link) => {
-      link.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navLinks.classList.remove("active");
-      });
-    });
-  </script>
-  <!-- Enquiry Modal -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const modal = document.getElementById("myModal");
-      const closeBtn = modal.querySelector(".close");
-      const enquireBtn = document.getElementById("enquireBtn");
-      const downloadTypeInput = document.getElementById("downloadType");
-
-      // --- Auto popup after 5s ---
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          modal.style.display = "flex";
-        }, 5000);
-      });
-
-      // --- Open modal on Enquire button ---
-      if (enquireBtn) {
-        enquireBtn.addEventListener("click", () => {
-          modal.style.display = "flex";
-        });
-      }
-
-      // --- Open modal on Download buttons ---
-      document.querySelectorAll(".download-btn").forEach((btn) => {
-        btn.addEventListener("click", function () {
-          if (downloadTypeInput) {
-            downloadTypeInput.value = this.dataset.type || "";
-          }
-          modal.style.display = "flex";
-          console.log("Modal opened for:", this.dataset.type);
-        });
-      });
-
-      // --- Close modal on close icon ---
-      closeBtn.addEventListener("click", () => {
-        modal.style.display = "none";
-      });
-
-      // --- Close modal when clicking outside ---
-      window.addEventListener("click", (e) => {
-        if (e.target === modal) {
-          modal.style.display = "none";
-        }
-      });
-    });
-  </script>
-  <!-- Main Slider -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // 3 desktop images
-      const desktopImages = [
-        "./assets/images/banner/Green Housing Lavender web banner - 1.jpg",
-        "./assets/images/banner/Green Housing Lavender web banner - 2.jpg",
-      ];
-
-      // 3 mobile images
-      const mobileImages = [
-        "./assets/images/banner/Green Housing Lavender Mobile banner - 1.jpg",
-        "./assets/images/banner/Green Housing Lavender Mobile banner - 2.jpg",
-      ];
-
-      const section = document.querySelector(".main-slider");
-
-      // Decide which set to use
-      let images = window.innerWidth <= 768 ? mobileImages : desktopImages;
-
-      let index = 0;
-      function changeSlide() {
-        section.style.backgroundImage = `url("${images[index]}")`;
-        index = (index + 1) % images.length;
-      }
-
-      // Run immediately + loop every 4 sec
-      changeSlide();
-      setInterval(changeSlide, 4000);
-    });
-  </script>
-  <!-- Validation -->
-  <!-- ✅ Script for enquiry-form1 -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const sheetURL =
-        "https://script.google.com/macros/s/AKfycbxlPQE1M48uP4RmOwSEqW94EqSST6Fnzyhz1HwhVkdLIWKzq2SanfiiIX7eHdZx1ZFk/exec";
-      const crmURL = "https://aubackend.adventurus.in/api/webhook/third-party";
-
-      const form1 = document.getElementById("enquiry-form1");
-      if (form1) {
-        form1.addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          // reCAPTCHA validation for form1
-          const captchaResponse = grecaptcha.getResponse();
-          if (!captchaResponse) {
-            alert("Please complete the reCAPTCHA before submitting.");
-            return;
-          }
-
-          const submitBtn = form1.querySelector("button[type='submit']");
-          const originalText = submitBtn.textContent;
-          submitBtn.textContent = "Submitting...";
-          submitBtn.disabled = true;
-
-          const formData = new FormData(form1);
-          formData.append("g-recaptcha-response", captchaResponse);
-
-          // 1. Google Sheets
-          fetch(sheetURL, { method: "POST", body: formData })
-            .then((res) => res.json())
-            .then((data) => {
-              if (data.result === "success") {
-                // 2. CRM
-                const crmPayload = {
-                  leadEmail: formData.get("email"),
-                  leadPhoneNumber: "+91" + formData.get("phone"),
-                  leadSource: "Google",
-                  leadStatus: "New",
-                  leadName: formData.get("name"),
-                  project: 5,
-                  createBy: 6,
-                  leadNotes: formData.get("message"),
-                  company_id: 3,
-                };
-
-                return fetch(crmURL, {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify(crmPayload),
-                });
-              }
-            })
-            .then((res) => (res ? res.json() : null))
-            .then((crmRes) => {
-              console.log("CRM response (Form1):", crmRes);
-              form1.reset();
-              grecaptcha.reset();
-
-              // PDF download (only for form1)
-              const type = document.getElementById("downloadType").value;
-              const pdfFiles = {
-                apartmentvilla: "Lavendar_Floor_Plan.pdf",
-                brochure: "Lavendar_Brand_Brochure.pdf",
-              };
-              if (type && pdfFiles[type]) {
-                const pdf = pdfFiles[type];
-                const link = document.createElement("a");
-                link.href = pdf;
-                link.download = pdf;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }
-
-              window.location.href = "thankyou.html";
-            })
-            .catch((err) => {
-              console.error("Error (Form1):", err);
-              alert("Failed to submit form.");
-            })
-            .finally(() => {
-              submitBtn.textContent = originalText;
-              submitBtn.disabled = false;
-            });
-        });
-      }
-    });
-  </script>
-  <!-- ✅ Script for enquiryForm -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const sheetURL =
-        "https://script.google.com/macros/s/AKfycbxlPQE1M48uP4RmOwSEqW94EqSST6Fnzyhz1HwhVkdLIWKzq2SanfiiIX7eHdZx1ZFk/exec";
-      const crmURL = "https://aubackend.adventurus.in/api/webhook/third-party";
-
-      const form2 = document.getElementById("enquiryForm");
-      if (form2) {
-        form2.addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          const submitBtn = form2.querySelector("button[type='submit']");
-          const originalText = submitBtn.textContent;
-          submitBtn.textContent = "Submitting...";
-          submitBtn.disabled = true;
-
-          const formData = new FormData(form2);
-
-          // 1. Google Sheets
-          fetch(sheetURL, { method: "POST", body: formData })
-            .then((res) => res.json())
-            .then((data) => {
-              if (data.result === "success") {
-                // 2. CRM
-                const crmPayload = {
-                  leadEmail: formData.get("email"),
-                  leadPhoneNumber: "+91" + formData.get("phone"),
-                  leadSource: "Google",
-                  leadStatus: "New",
-                  leadName: formData.get("name"),
-                  project: 5,
-                  createBy: 6,
-                  leadNotes: formData.get("message"),
-                  company_id: 3,
-                };
-
-                return fetch(crmURL, {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify(crmPayload),
-                });
-              }
-            })
-            .then((res) => (res ? res.json() : null))
-            .then((crmRes) => {
-              console.log("CRM response (Form2):", crmRes);
-              form2.reset();
-              window.location.href = "thankyou.html";
-            })
-            .catch((err) => {
-              console.error("Error (Form2):", err);
-              alert("Failed to submit form.");
-            })
-            .finally(() => {
-              submitBtn.textContent = originalText;
-              submitBtn.disabled = false;
-            });
-        });
-      }
-    });
-  </script>
-  <script>
-   const url = "https://aubackend.adventurus.in";
-    window.WIDGET_CONFIG = {
-      apiUrl: `${url}`,
-      aiUrl: "https://chatagent.adventurus.in",
-      apiKey: "fac796d6-8a35-4ab6-b554-81cdb752205e",
-      project_id: "210",
-      position: "bottom-right",
-      theme: "light",
-      language: "en",
-      autoOpen: true,
-      requireUserDetails: true,
-      branding: {
-        name: "GREENFIELD",
-        subtitle: "Your Personal Home Advisor",
-        logo: "https://lavender.greenfieldhousingindia.com/assets/images/faviocn.png",
-        buttonText: "Book a site visit",
-        headerBgColor: "#aaa5ffeb",
-        bodyBgColor: "linear-gradient(to right top, #b97ff0, #a573ea, #8f68e4, #775ddf, #5a53d9)",
-        buttonBgColor: "linear-gradient(to right, #caa0f7, #c093f4, #b586f2, #aa79ef, #9e6ced)",
-        headerColor: "#fff",
-        bodyColor: "#fff",
-        bodyDescriptionColor: "#e6e7e8"
-      },
-
-      welcomeMessage: {
-        title: "",
-        content: ""
-      },
-
-      userDetailsForm: {
-        title: "Ready To Own Your Next Address?",
-        subtitle: "Let's get to know you.",
-        description: "Your details are safe. Only relevant property updateds.",
-        fields: {
-          name: { label: "Full Name : ", placeholder: "So we know what to call you", required: true },
-          email: { label: "Email : ", placeholder: "For brochures and price sheet", required: true },
-          phone: { label: "Phone : ", placeholder: "For Priority access", required: true }
-        }
-      },
-
-      appointmentForm: {
-        title: "Book Your Site Visit",
-        subtitle: "Schedule your Site visit in seconds",
-        fields: {
-          date: { label: "Site visit Date", placeholder: "Enter your site visit date", required: true },
-          time: { label: "Site Visit Time", placeholder: "Enter your site visit time", required: true },
-          pickup_required: { label: "Pickup Need", placeholder: "", required: false },
-          pickup_address: { label: "Pickup Address", placeholder: "Enter your pickup address", required: false }
-        }
-      }
-    };
-    const script = document.createElement('script');
-    script.src = `${url}/public/chat-embed.js`;
-    script.onload = () => console.log("✅ Chat widget script loaded successfully");
-    script.onerror = () => console.error("❌ Failed to load chat widget script");
-    document.body.appendChild(script);
-  </script>
-
+        appointmentForm: {
+          title: "Book Your Site Visit",
+          subtitle: "Schedule your Site visit in seconds",
+          fields: {
+            date: {
+              label: "Site visit Date",
+              placeholder: "Enter your site visit date",
+              required: true,
+            },
+            time: {
+              label: "Site Visit Time",
+              placeholder: "Enter your site visit time",
+              required: true,
+            },
+            pickup_required: {
+              label: "Pickup Need",
+              placeholder: "",
+              required: false,
+            },
+            pickup_address: {
+              label: "Pickup Address",
+              placeholder: "Enter your pickup address",
+              required: false,
+            },
+          },
+        },
+      };
+      const script = document.createElement("script");
+      script.src = `${url}/public/chat-embed.js`;
+      script.onload = () =>
+        console.log("✅ Chat widget script loaded successfully");
+      script.onerror = () =>
+        console.error("❌ Failed to load chat widget script");
+      document.body.appendChild(script);
+    </script>
   </body>
-
 </html>
